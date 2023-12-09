@@ -34,6 +34,49 @@ nav{
     width: 140px;
 }
 
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+    border-radius: 50%; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do contêiner */
+}
+
+.social-media img {
+    width: 100%; /* Garante que a imagem preencha completamente o contêiner */
+    border-radius: 50%; /* Bordas arredondadas */
+    transition: transform 0.5s; /* Adiciona uma transição suave ao redimensionar a imagem */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Aumenta a escala da imagem ao passar o mouse para um efeito sutil */
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 255, 0.5); /* Efeito de sombra azul apenas na borda ao passar o mouse */
+}
+
+.social-media a:nth-child(1) {
+    background: #0077b5; /* Cor do LinkedIn */
+}
+
+.social-media a:nth-child(2) {
+    background: #000000; /* Cor do Notion */
+}
+
+.social-media a:nth-child(3) {
+    background: #24292e; /* Cor do GitHub */
+}
+
+.social-media a:nth-child(4) {
+    background: #12100e; /* Cor do Medium */
+}
+
 nav ul li{
     display: inline-block;
     list-style: none;
